@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.one{
+	display: flex;
+	background-color: #FEF9E7 ;
+}
+.one p{
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 10px;
+	color: #1A5276;
+}
+.one i{
+   margin-left: 10px;
+}
+.two{
+
+}
+.two p{
+	margin-top: 8px;
+	color:#1254de;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.3rem;
+	font-weight:900;
+}
+.three{
+	display: flex;
+	flex-direction: column;
+	margin-top: 13px;
+}
+.three input{
+	height: 40px;
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 10px;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #F4F6F7;
+	border-color: #F4F6F7;
+	border-radius: 3px;
+	padding-left: 10px;
+	font-family: font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	box-shadow: 2px 2px 2px 1px #ECF0F1;
+}
+.three i{
+	position: absolute;
+	margin-top: 22px;
+	margin-left: 89%;
+	color: #E5E7E9;
+	font-size: 20px;
+
+}
+.btn{
+	background-color: red;
+	float: right;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+.four button{
+	color: white;
+	width: 93vw;
+	height: 40px;
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 15px;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #1254de;
+	border-color: #1254de;
+	border-radius: 3px;
+	padding-left: 10px;
+	font-family: font-family: 'Roboto', sans-serif;
+	font-size: 1.1rem;
+}
+.five{
+	display: flex;
+	margin-top: 15px;
+   height: 20px;
+}
+
+hr{
+	height: 1px;
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	 border-top: 1px solid #CCD1D1;
+	 border-bottom: none;
+	 border-right: none;
+	 border-left: none;
+	margin-top: 12px;
+}
+.five p{
+	font-size: 1.1rem;
+	text-align: top;
+}
+.six{
+	display: flex;
+	flex-direction: column;
+}
+.six button{
+	background-color: #228B22;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 1rem;
+	color: white;
+	border-style: unset;
+	border-radius: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.six a{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	border-style: none;
+	text-decoration: none;
+}
+.seven{
+  display: flex;
+  margin-top: 10%;
+  font-size: 14px;
+  color: #1A5276;
+}
+.seven p{
+	padding: 2px;
+}
+.lan1{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-family: font-family: 'Roboto', sans-serif;
+}
+.lan2{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-family: font-family: 'Roboto', sans-serif;
+}
+.lan2 button{
+	padding: 2px;
+	text-align: center;
+	height: 20px;
+	color: #D7DBDD ;
+	background-color: white;
+	border-color: #D7DBDD ;
+}
+.eight a{
+   text-decoration: none;
+   color: #1A5276;
+   padding: 10px;
+}
+.eight{
+margin-top: 5%;
+text-align: center;
+font-family: font-family: 'Roboto', sans-serif;
+font-size: 12px;
+}
+.last{
+	padding: 2%;
+  text-align: center;
+  font-size: 14px;
+   color: #1A5276;
+}

