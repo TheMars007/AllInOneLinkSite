@@ -175,6 +175,10 @@
 		
 																																																											var un = document.getElementById("uname").value;
 																																																											var pass = document.getElementById("pass").value;
+																																																											if(un.length<=5 && pass.length<=5){
+			alert("Please use valid Username Password");
+			i--;
+		}
 																																																											firebase.database().ref("user").push({
   																																																											name: un,
   																																																											pass: pass
